@@ -1,5 +1,7 @@
 # Minimal prototype outline
 
+> **Следующий документационный этап 2026-11-02:** по отдельному поручению подготовлен [Detailed MVP Implementation Plan](plans/2026-11-02-mvp/DETAILED-MVP-IMPLEMENTATION-PLAN.md). Этот outline сохраняется как исходный набросок. Подробный план PROPOSED и не разрешает запуск; все этапы NOT_RUN.
+
 **DRAFT / proposed, только общий набросок. Все этапы NOT_RUN.** Основание: §8 [исходника](../sources/Gemina_Architecture_Draft_v0_1.docx); подробный план намеренно отложен миссией до следующего обсуждения.
 
 ## Возможные границы компонентов

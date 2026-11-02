@@ -22,3 +22,14 @@
 - [sources/Gemina_Architecture_Draft_v0_1.docx](../sources/Gemina_Architecture_Draft_v0_1.docx)
 
 Исходники сохраняются отдельно от производных документов; публикация не превращает предложения в принятые решения.
+
+## Подробный план первого MVP — отдельный Draft
+
+Пакет подготовлен от main, учитывает непосредственно прочитанные открытые PR #2/#3/#4; они не считаются слитыми. Предлагаемые формулы и настройки не являются принятыми решениями. Реализация и все runtime-проверки NOT_RUN.
+
+- [Detailed MVP Implementation Plan](plans/2026-11-02-mvp/DETAILED-MVP-IMPLEMENTATION-PLAN.md)
+- [Mathematical / Interface Contracts](plans/2026-11-02-mvp/MATHEMATICAL-INTERFACE-CONTRACTS.md)
+- [Training and Evaluation Protocol](plans/2026-11-02-mvp/TRAINING-EVALUATION-PROTOCOL.md)
+- [Test Matrix / Acceptance Criteria](plans/2026-11-02-mvp/TEST-MATRIX-ACCEPTANCE.md)
+- [Risks and Open Decisions](plans/2026-11-02-mvp/RISKS-OPEN-DECISIONS.md)
+- [Согласование с PR #2, #3, #4 и точные SHA](plans/2026-11-02-mvp/PR-ALIGNMENT.md)
