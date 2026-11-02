@@ -40,3 +40,10 @@ Project_Index → Gemina: организационные правила и ша�
 ## Навигация
 
 [Карта документов](DOCUMENTATION-MAP.md) · [AGENTS](../AGENTS.md) · [README](../README.md) · [WEB-AGENT](WEB-AGENT.md).
+
+## Исследование предшествующих методов 2026-11-02
+
+По отдельному поручению подготовлен [обзор с формальными механизмами, стоимостью, ограничениями и контрольными опытами](research/2026-11-02-PRIOR-ART-REVIEW.md), связанный с [research issue #1](https://github.com/LL1yt/Gemina_project/issues/1). Статус **REVIEW DRAFT**, для рассмотрения; это не принятие архитектурных предложений. Сопоставление учитывает свободную абсолютную адресацию и будущую историю из [Draft PR #2](https://github.com/LL1yt/Gemina_project/pull/2) на `5339418926fa6f86fb849bd091b7f6eb7f0b1e83`; состояние той ветки отделено от main.
+
+Проверены первоисточники исходной библиографии, добавлены Recurrent STN, Neural Stored-program Memory, Neural Map, подтверждённая Neural Field Turing Machine и альтернативы BPTT. Результаты авторов отделены от аналитических выводов. Воспроизведение, модель, training/inference, benchmark и CI: **NOT_RUN**. Принятые решения и исходные формулы этим обзором не изменены.
+
