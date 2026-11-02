@@ -1,5 +1,7 @@
 # Training design
 
+> **Текущее планирование 2026-11-02:** [подробный training/evaluation protocol](plans/2026-11-02-mvp/TRAINING-EVALUATION-PROTOCOL.md) сохраняет полный BPTT главным reference и задаёт предлагаемые настройки. Его будущий TBPTT-контроль имеет один update после T и отличается от stateful-update варианта ниже. [Согласование источников](plans/2026-11-02-mvp/PR-ALIGNMENT.md). Исполнение NOT_RUN.
+
 **DRAFT / proposed; исполнение NOT_RUN.** Производное изложение §§2.6, 3, 5 и 8.2 [исходника](../sources/Gemina_Architecture_Draft_v0_1.docx).
 
 ## Начальная гипотеза
