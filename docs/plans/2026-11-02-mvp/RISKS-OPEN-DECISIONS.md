@@ -12,7 +12,7 @@
 | Слабый gradient head | Norm по head и u в невырожденной fixture, finite differences | Проверить detach indices vs целого r, непостоянное W, модуляцию, initialization | REINFORCE, custom VJP и global lookup |
 | Шов или насыщение координат | Off-boundary derivatives, one-sided seams; max(abs(u)) и FP32-разрешение | Проверить positive periodic indices и scale; альтернативную head менять отдельным контролем | Clamp координаты, трактовка излома как гладкой точки |
 | Неудачное отношение LR | Реальный relative update W/θ, change r на фиксированных probes, seed effects | Slow/equal LR по ограниченному протоколу | Большой tuning sweep, предположение «slow значит stable» |
-| W лишь добавляет ёмкость | GRU той же H и GRU H=248 близкой total capacity | Отчитаться по обоим controls и compute-различию | Заявление пользы геометрии по сравнению только с маленькой GRU |
+| W лишь добавляет ёмкость | Сначала M6-A: GRU-only H=128, затем M6-B: GRU-only H=248 близкой total capacity | Отчитаться по обоим controls, frozen/static ablations и compute-различию | Заявление пользы геометрии по сравнению только с маленькой GRU |
 | Утечка targets или состояния | Prefix causality, batch isolation, duplicate keys, split/RNG manifest | Остановить run, исправить split/reset/shift; затронутый test перестаёт быть чистым | Объяснение внезапного качества «эмерджентностью» |
 | Snapshot относится к другим весам | Full model/config/vocabulary fingerprints, cursor | Reject + reset или полный нужный replay; один пересчёт r не исправляет h | Тихая миграция старого h |
 | Случайное усечение BPTT | r₀-path, двухшаговая derivative fixture, single loss closure | Убрать per-token valueAndGrad или лишний detach; проверить aux semantics | Компенсация более длинным training |
