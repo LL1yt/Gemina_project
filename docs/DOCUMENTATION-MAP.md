@@ -18,6 +18,7 @@
 - [docs/WEB-AGENT.md](WEB-AGENT.md)
 - [docs/decisions/README.md](decisions/README.md)
 - [docs/proposals/README.md](proposals/README.md)
+- [docs/proposals/2026-11-02-ARCHITECTURE-CLARIFICATIONS.md](proposals/2026-11-02-ARCHITECTURE-CLARIFICATIONS.md)
 - [sources/GEMINA-Research-Mission-v0.2.md](../sources/GEMINA-Research-Mission-v0.2.md)
 - [sources/Gemina_Architecture_Draft_v0_1.docx](../sources/Gemina_Architecture_Draft_v0_1.docx)
 
