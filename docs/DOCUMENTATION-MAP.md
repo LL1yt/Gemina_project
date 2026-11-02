@@ -32,4 +32,5 @@
 - [Training and Evaluation Protocol](plans/2026-11-02-mvp/TRAINING-EVALUATION-PROTOCOL.md)
 - [Test Matrix / Acceptance Criteria](plans/2026-11-02-mvp/TEST-MATRIX-ACCEPTANCE.md)
 - [Risks and Open Decisions](plans/2026-11-02-mvp/RISKS-OPEN-DECISIONS.md)
+- [Independent sampler tests and agent workflow](plans/2026-11-02-mvp/INDEPENDENT-SAMPLER-TESTS-AND-AGENT-WORKFLOW.md) — задания двум независимым агентам, момент M0→M1/M2 и правила доступа.
 - [Согласование с PR #2, #3, #4 и точные SHA](plans/2026-11-02-mvp/PR-ALIGNMENT.md)
