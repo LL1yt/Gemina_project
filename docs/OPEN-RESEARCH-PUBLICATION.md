@@ -58,19 +58,29 @@ git -C /new/path/Gemina-restored.git branch main refs/remotes/origin/main
 - CONTRIBUTING и AGENTS различают независимое review, реализацию, проверку и разрешение merge. Новые подключения Claude/других сервисов не создавались, доступ к другим проектам не предоставлялся.
 - Память, карта, происхождение, реестр решений и WEB-AGENT обновлены. Миссия и DOCX сохранены. Формулы и планы PR #2–#5 не объединены.
 
-## Фактический статус публикации и защиты
+## Подтверждённая публичность и защита — 2026-11-03
 
-Пока подтверждён только исходный статус **private / main unprotected / auto-merge off**. Подготовка ветки и этих документов не означает изменения main, публичности или защиты. Результат последующих действий должен быть внесён сюда после обратного чтения GitHub.
+**Выполнено:** [Gemina_project](https://github.com/LL1yt/Gemina_project) переведён в public через авторизованный Safari: Settings → General → Danger Zone → Change visibility → Change to public → подтверждения GitHub. Затем запрос к GitHub REST **без авторизации** вернул `private=false`, `visibility=public`, `default_branch=main`. Независимое повторное чтение подключением GitHub подтвердило public и `allow_auto_merge=false`. Другие проекты не затронуты.
 
-GitHub-подключение доступно для содержимого/PR, но не предоставляет административные операции видимости/protection. Read protection вернул 403 `Resource not accessible by integration`; rulesets приватного Free-репозитория — 403 с предложением сделать репозиторий публичным. Локальный gh вернул 401 Bad credentials; секреты не извлекались. GitHub Desktop имеет собственный действующий вход и используется для Fetch/commit/push. Настройки видимости/защиты находятся на сайте; авторизованный Safari открыл Settings Gemina. Другие проекты не затронуты.
+Создано и повторно открыто сохранённое classic Branch Protection rule [85760077](https://github.com/LL1yt/Gemina_project/settings/branch_protection_rules/85760077), pattern **main**, applies to **1 branch**. Страница создания прямо подтвердила доступность enforcement в этом публичном репозитории на GitHub Free. Повторное API-чтение branches подтвердило `main protected=true`; все четыре research heads совпали с таблицей выше.
 
-### Действия владельца, если интерфейс потребует его участия
+| Настройка | Фактически сохранено |
+|---|---|
+| Require a pull request before merging | Включено |
+| Require approvals / Code Owners / approval of most recent push | Выключено, второй человек не требуется |
+| Do not allow bypassing the above settings | Включено; действует также на administrators/custom bypass roles |
+| Allow force pushes | Выключено |
+| Allow deletions | Выключено |
+| Require status checks | Выключено: работающего CI пока нет |
+| Allow auto-merge | Выключено |
 
-1. Просмотреть отдельный PR публикационного оформления. Не сливать автоматически #2–#5. Для включения пакета в main требуется отдельное явное решение о его PR; защита ниже не требует второго человека.
-2. GitHub → **Gemina_project → Settings → General → Danger Zone → Change repository visibility → Make public**. Пройти предупреждения GitHub и требуемое подтверждение имени репозитория. Не менять видимость Project_Index или других репозиториев.
-3. **Settings → Branches → Add classic branch protection rule**. Branch name pattern: `main`. Включить **Require a pull request before merging**; **Require approvals** оставить выключенным (0). Включить **Do not allow bypassing the above settings** (включая administrators). **Allow force pushes** и **Allow deletions** оставить выключенными. Не задавать bypass actors. Обязательные status checks пока не включать: функционирующего CI нет. Сохранить правило. GitHub Free поддерживает защиту публичных веток.
-4. **Settings → General → Pull Requests → Allow auto-merge** оставить выключенным. Проверить правило повторным открытием и состояние main через API/UI. Администратор всё ещё может изменить само правило; «без обхода» относится к применению действующего правила, а не лишает владельца административного контроля.
-5. Проверить репозиторий, README, docs и историю без авторизации и прочитать metadata `private=false`, `visibility=public`; подтвердить сохранность всех research heads. Защиту подтвердить сохранёнными настройками, а не одним текстом AGENTS.
+GitHub первоначально включил Require approvals при выборе PR requirement. Флажок снят **до создания правила**; повторное открытие сохранённого правила подтвердило значение 0. Непреднамеренно блокирующее правило не сохранялось. Администратор всё ещё может изменить само правило; запрет обхода не лишает владельца административного контроля. Branch Protection не ограничивает чтение и не назначает новых collaborators.
+
+GitHub-подключение умеет содержимое/PR, но не административные операции видимости/protection. Детальный protection endpoint продолжает возвращать 403 `Resource not accessible by integration`, поэтому конкретные флаги проверены через повторное открытие сохранённых настроек Safari, а не выведены из одного `protected=true`. GitHub Desktop использован для Fetch/commit/push; локальный gh вернул 401 Bad credentials и не использовался для изменений. Секреты не извлекались.
+
+Пакет оформлен отдельным [PR #6](https://github.com/LL1yt/Gemina_project/pull/6). Владелец явно разрешил слияние **только PR #6** после просмотра конкретного пакета. Первоначальный публикационный commit `3af92e56a8f8650de1c9a354bdfa353e7b06e3c4` прочитан обратно: все 26 файлов дерева совпали по blob SHA с локальными; в этом же PR затем записаны подтверждённые настройки. Состояние слияния и итоговый main SHA проверяются по самому PR/GitHub после его включения. PR #2–#5 сохраняются открытыми; отдельное решение для их согласования/слияния не принято.
+
+Обязательных оставшихся действий владельца по публичности/защите нет. Будущие отдельные действия: рассмотреть #2–#5, подключать новых агентов только по выбору владельца, добавить реальные required checks после появления CI. Необязательная дополнительная сохранность — скопировать локальный bundle на отдельный носитель. Project_Index в этой задаче не обновлялся согласно явному ограничению области.
 
 Источники: [GitHub — protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches), [PR без обязательного review](https://github.blog/changelog/2021-11-09-require-pull-requests-without-requiring-reviews/), [CC BY 4.0 legal code](https://creativecommons.org/licenses/by/4.0/legalcode), [MIT](https://opensource.org/license/mit).
 
