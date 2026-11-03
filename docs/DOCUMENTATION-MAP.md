@@ -5,6 +5,12 @@
 - [AGENTS.md](../AGENTS.md)
 - [README.md](../README.md)
 - [START-HERE.md](../START-HERE.md)
+- [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [CITATION.cff](../CITATION.cff)
+- [LICENSE — области и исключения](../LICENSE)
+- [LICENSE-CODE — MIT](../LICENSE-CODE)
+- [LICENSE-DOCUMENTATION — CC BY 4.0](../LICENSE-DOCUMENTATION)
+- [docs/OPEN-RESEARCH-PUBLICATION.md](OPEN-RESEARCH-PUBLICATION.md)
 - [docs/ARCHITECTURE.md](ARCHITECTURE.md)
 - [docs/INITIALIZATION-CHECKS.md](INITIALIZATION-CHECKS.md)
 - [docs/LITERATURE-RESEARCH-NOTES.md](LITERATURE-RESEARCH-NOTES.md)
@@ -22,3 +28,5 @@
 - [sources/Gemina_Architecture_Draft_v0_1.docx](../sources/Gemina_Architecture_Draft_v0_1.docx)
 
 Исходники сохраняются отдельно от производных документов; публикация не превращает предложения в принятые решения.
+
+Отдельные, ещё не объединённые исследовательские пакеты: [PR #2 — уточнения](https://github.com/LL1yt/Gemina_project/pull/2), [PR #3 — prior art](https://github.com/LL1yt/Gemina_project/pull/3), [PR #4 — итеративный цикл](https://github.com/LL1yt/Gemina_project/pull/4), [PR #5 — подробный MVP-план](https://github.com/LL1yt/Gemina_project/pull/5). Их новые файлы доступны в ветках PR, а не в текущем main.

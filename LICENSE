@@ -1,0 +1,16 @@
+# Gemina licensing scope
+
+- **MIT**: original project software, including future implementations and original executable code examples in documentation. See [LICENSE-CODE](LICENSE-CODE).
+- **CC BY 4.0**: original research prose, equations, project diagrams and documentation in `README.md`, `AGENTS.md`, `START-HERE.md`, `CONTRIBUTING.md`, `CITATION.cff`, `docs/`, and `sources/`, including the original mission and Architecture Draft DOCX, only to the extent the project can grant the relevant rights. See [LICENSE-DOCUMENTATION](LICENSE-DOCUMENTATION).
+
+This is a division by material type, **not** a choice of either license for every file. Documentation surrounding a code example remains CC BY 4.0; the original executable example is MIT. Future software files should use `SPDX-License-Identifier: MIT` where appropriate.
+
+Copyright (c) 2026 LL1yt and respective contributors, to the extent copyright applies. LL1yt is the owner's public GitHub identifier, not an asserted legal name. Attribution for original documentation: **LL1yt, Gemina**, repository URL, and the relevant revision. Preserve existing contributor credits, cite the applicable license and indicate changes.
+
+## Exclusions
+
+Referenced papers, external repositories, quotations, third-party images, datasets, model weights, fonts, document-template components and other third-party materials retain their own terms. A citation, hyperlink, DOCX container or Git commit does not relicense them. The DOCX's bibliography and summaries do not grant rights to the linked papers. Standard OOXML/Word template components are not claimed as original Gemina research.
+
+No third-party corpus, weights or implementation is included by this licensing declaration. Any future inclusion must identify its provenance and license separately. Historical versions and PR contributions are covered only insofar as the relevant rights holder authorizes licensing; do not infer permission to relicense another person's contribution. New contributions follow [CONTRIBUTING.md](CONTRIBUTING.md).
+
+AI assistance is disclosed in [docs/PROVENANCE.md](docs/PROVENANCE.md). No AI model or service is designated a legal author or rights holder, and this notice does not claim copyright over material that is not copyrightable. License texts retain their own notices. These licenses grant reuse rights; they do not grant repository write access, acceptance of a PR, endorsement or a right to collaborate with the owner.

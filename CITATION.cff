@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite this research repository and the exact commit used. See LICENSE for material-specific terms and docs/PROVENANCE.md for AI assistance."
+type: software
+title: "Gemina: Mobile Neural Agents in a Shared Trainable Weight Field"
+authors:
+  - name: "LL1yt"
+    website: "https://github.com/LL1yt"
+repository-code: "https://github.com/LL1yt/Gemina_project"
+url: "https://github.com/LL1yt/Gemina_project"
+abstract: >-
+  Research / Architecture Draft investigating a recurrent Lion agent that
+  selects continuous addresses in a stationary trainable weight field W.
+  This repository contains research documentation and proposed experiments;
+  it does not report a reproduced implementation or successful training.
+  LL1yt is the owner's public identifier. AI assistance is documented in
+  docs/PROVENANCE.md and is not listed as legal authorship.
+keywords:
+  - recurrent neural networks
+  - differentiable spatial addressing
+  - trainable weight field
+  - research draft
