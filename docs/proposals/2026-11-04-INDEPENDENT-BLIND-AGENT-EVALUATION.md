@@ -3,9 +3,9 @@
 **Статус:** ACCEPTED OPTIONAL PROCESS / user-confirmed 2026-11-04. Not a change to the Gemina model, not runtime authorization.  
 **Совместимость:** [MVP Baseline](../MVP-BASELINE-v0.1.md), [M0 Passport](../M0-IMPLEMENTATION-PASSPORT-v0.1.md), [PR #5 independent fixtures protocol](https://github.com/LL1yt/Gemina_project/blob/research/2026-11-02-detailed-mvp-plan/docs/plans/2026-11-02-mvp/INDEPENDENT-SAMPLER-TESTS-AND-AGENT-WORKFLOW.md), independent review [PR #8](https://github.com/LL1yt/Gemina_project/pull/8), adopted [difficulty tiers](2026-11-04-DIFFICULTY-AND-AGENT-MODES.md) (PR #10). This protocol adds an **orthogonal optional evaluation mode** and does not change A/B/C risk assignments. See [agent allocation](../AGENT-WORK-ALLOCATION-v0.1.md) and the [leaderboard](../agent-evaluations/LEADERBOARD.md).
 
-## Operational alignment (2026-11-04)
+## Operational alignment (updated 2026-11-04)
 
-M0 passport and risk-tier proposal have been merged into main through separate, owner-authorized PRs. The **first suggested parallel comparison** is a small M1 sampler implementation (independent fixtures first), not competing full M3–M4 trainers. This protocol is a process choice only, **not** permission to start coding, spend compute or invite new agents automatically. Confirm task card, budget and local toolchain first. Results and winners are recorded only after tests and anonymized judging in [Gemina Agent League](../agent-evaluations/LEADERBOARD.md).
+M0 passport and risk-tier proposal have been merged into main through separate, owner-authorized PRs. Updated owner decision: **M1 is not a contest**. Morgana implements the single sampler reference; Virgil prepares independent fixtures and audits it. Parallel implementations are optional **only** for later complex sections when their added value warrants the effort. This protocol is a process choice only, **not** permission to start coding, spend compute or invite new agents automatically. Confirm task card, budget and local toolchain first. Results and winners are recorded only after tests and anonymized judging in [Gemina Agent League](../agent-evaluations/LEADERBOARD.md).
 
 ## Purpose
 
@@ -24,8 +24,8 @@ Learn how the current coding agents differ at *the same bounded, real engineerin
 | Task | Mode | Why |
 |---|---|---|
 | M0 passport | One author + independent contract check | Documentation reconciliation; no need to duplicate code |
-| M1 sampler | **First small parallel blind contest**: same sampler contract, each supplies reference fixtures + own minimal implementation after M0/runtime permission | Well bounded, testable with analytical expected values, catches indexing/wrap errors |
-| M2 gradients | **Optional second parallel contest** or independent test suites/audits of one baseline | High consequence and hard-to-detect detach/edge errors; compare analytic vs autodiff vs finite differences |
+| M1 sampler | **One implementer (Morgana) + independent fixtures and audit (Virgil), no contest** | Simple bounded code; use S01–S05 and hand-computable expected values |
+| M2 gradients | Independent audits/tests by default; consider parallel implementations only if useful and separately authorized | High consequence and hard-to-detect detach/edge errors; compare analytic vs autodiff vs finite differences |
 | M3 Lion+W full step | One implementation + independent review by default; duplicate only if owner explicitly allocates budget | Avoid two large overlapping implementations before first run |
 | M4 first training | One reference implementation + independent audit of loss, splits, updates and results | GPU/compute costly; no duplicate training just for contest |
 | M5 checkpoint/replay | Ordinary implementer + tests/audit | Usually well captured by round-trip checks |
@@ -64,7 +64,7 @@ Optional playful honours: `Best Correctness`, `Best Explainability`, `Most Elega
 
 PR #10 proposes A/B/C difficulty tiers based on the cost of silent errors. The parallel/blind mode here is **orthogonal**, not a fourth difficulty tier: one can choose `A + blind independent development`, `A + independent audit`, or `B + regular tests` depending on risk, budget and purpose. Do **not** hard-code a model brand as universally strongest; user chooses models/effort configurations at each trial. The original strongest-model preference in PR #10 remains a proposal, not a proven ranking.
 
-The owner chooses when a blind competition is worth doing. **M1 is the preferred first small trial**, not a prerequisite to shipping a working prototype; M2 is the next candidate when gradients are the central risk. Avoid a full-framework competition and do not route the contest artifacts into the model's W/h/p/r runtime.
+The owner chooses when a blind competition is worth doing. **M1 is explicitly excluded from competitions** under the 2026-11-04 decision; its ordinary independent code review is not counted as a league event. M2 or later high-risk portions may be considered only if two independent implementations would materially improve confidence. Avoid a full-framework competition and do not route the contest artifacts into the model's W/h/p/r runtime.
 
 ## Status
 
