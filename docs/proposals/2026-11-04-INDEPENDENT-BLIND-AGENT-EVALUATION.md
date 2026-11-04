@@ -1,7 +1,11 @@
 # Gemina — Independent Development and Blinded Agent Evaluation v0.1
 
-**Статус:** PROCESS PROTOCOL / PROPOSED, user-requested 2026-11-04. Not a change to the Gemina model, not runtime authorization.  
-**Совместимость:** [MVP Baseline](../MVP-BASELINE-v0.1.md), [M0 Passport](../M0-IMPLEMENTATION-PASSPORT-v0.1.md), [PR #5 independent fixtures protocol](https://github.com/LL1yt/Gemina_project/blob/research/2026-11-02-detailed-mvp-plan/docs/plans/2026-11-02-mvp/INDEPENDENT-SAMPLER-TESTS-AND-AGENT-WORKFLOW.md), independent review [PR #8](https://github.com/LL1yt/Gemina_project/pull/8), difficulty proposal [PR #10](https://github.com/LL1yt/Gemina_project/pull/10). This document **adds** a separate optional evaluation mode; it does not amend or silently merge PR #10.
+**Статус:** ACCEPTED OPTIONAL PROCESS / user-confirmed 2026-11-04. Not a change to the Gemina model, not runtime authorization.  
+**Совместимость:** [MVP Baseline](../MVP-BASELINE-v0.1.md), [M0 Passport](../M0-IMPLEMENTATION-PASSPORT-v0.1.md), [PR #5 independent fixtures protocol](https://github.com/LL1yt/Gemina_project/blob/research/2026-11-02-detailed-mvp-plan/docs/plans/2026-11-02-mvp/INDEPENDENT-SAMPLER-TESTS-AND-AGENT-WORKFLOW.md), independent review [PR #8](https://github.com/LL1yt/Gemina_project/pull/8), adopted [difficulty tiers](2026-11-04-DIFFICULTY-AND-AGENT-MODES.md) (PR #10). This protocol adds an **orthogonal optional evaluation mode** and does not change A/B/C risk assignments. See [agent allocation](../AGENT-WORK-ALLOCATION-v0.1.md) and the [leaderboard](../agent-evaluations/LEADERBOARD.md).
+
+## Operational alignment (2026-11-04)
+
+M0 passport and risk-tier proposal have been merged into main through separate, owner-authorized PRs. The **first suggested parallel comparison** is a small M1 sampler implementation (independent fixtures first), not competing full M3–M4 trainers. This protocol is a process choice only, **not** permission to start coding, spend compute or invite new agents automatically. Confirm task card, budget and local toolchain first. Results and winners are recorded only after tests and anonymized judging in [Gemina Agent League](../agent-evaluations/LEADERBOARD.md).
 
 ## Purpose
 
