@@ -1,0 +1,32 @@
+Selected unmodified test-result lines from xcodebuild run 3 (2026-11-04).
+Full log SHA-256: 2723805ce2e7aab54a1c8b45858fb0a3847435e2a51ff38040a4f98d3ebeea6a
+Code commit: 7110c25ea05a8202fea96885c8f6693e72e41405
+
+Test Suite 'All tests' started at 2026-11-04 18:32:42.305.
+Test Suite 'GeminaSamplerTests.xctest' started at 2026-11-04 18:32:42.306.
+Test Suite 'PeriodicTrilinearSamplerTests' started at 2026-11-04 18:32:42.306.
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testRejectsInvalidInputsBeforeGather]' started.
+M1 -[PeriodicTrilinearSamplerTests testRejectsInvalidInputsBeforeGather]: max_abs=0.0, max_normalized=0.0
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testRejectsInvalidInputsBeforeGather]' passed (0.999 seconds).
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS01LogicalAxesCornerOrderAndAllNodes]' started.
+M1 -[PeriodicTrilinearSamplerTests testS01LogicalAxesCornerOrderAndAllNodes]: max_abs=0.0, max_normalized=0.0
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS01LogicalAxesCornerOrderAndAllNodes]' passed (1.350 seconds).
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS02WeightsMidpointAndSeededInteriors]' started.
+M1 -[PeriodicTrilinearSamplerTests testS02WeightsMidpointAndSeededInteriors]: max_abs=1.381558831781149e-07, max_normalized=0.0030355352997571525
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS02WeightsMidpointAndSeededInteriors]' passed (0.022 seconds).
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS03NegativeWrapPeriodsAndLargeCoordinates]' started.
+M1 -[PeriodicTrilinearSamplerTests testS03NegativeWrapPeriodsAndLargeCoordinates]: max_abs=0.0, max_normalized=0.0
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS03NegativeWrapPeriodsAndLargeCoordinates]' passed (0.021 seconds).
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS04ConstantsAndLocalChannelRamps]' started.
+M1 -[PeriodicTrilinearSamplerTests testS04ConstantsAndLocalChannelRamps]: max_abs=0.0, max_normalized=0.0
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS04ConstantsAndLocalChannelRamps]' passed (0.027 seconds).
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS05BatchIndependenceAndFP32Seams]' started.
+M1 -[PeriodicTrilinearSamplerTests testS05BatchIndependenceAndFP32Seams]: max_abs=1.478474533911367e-07, max_normalized=0.003170126117867043
+Test Case '-[GeminaSamplerTests.PeriodicTrilinearSamplerTests testS05BatchIndependenceAndFP32Seams]' passed (0.074 seconds).
+Test Suite 'PeriodicTrilinearSamplerTests' passed at 2026-11-04 18:32:44.801.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 2.494 (2.495) seconds
+Test Suite 'GeminaSamplerTests.xctest' passed at 2026-11-04 18:32:44.801.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 2.494 (2.496) seconds
+Test Suite 'All tests' passed at 2026-11-04 18:32:44.802.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 2.494 (2.496) seconds
+** TEST SUCCEEDED **
