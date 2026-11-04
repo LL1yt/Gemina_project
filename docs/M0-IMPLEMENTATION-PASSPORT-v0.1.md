@@ -59,3 +59,8 @@ All values in this section are a **selected, reproducible starting configuration
 6. **Source-of-truth:** this compact passport is the present choice for v0.1. Full derivations, detailed test identifiers and numerical tolerances remain in linked PR #5 until separately integrated; any divergence must be written as an explicit amendment. Existing PR #2 and #5 are not automatically merged or superseded as source histories.
 
 **Next authorized action from this document alone:** review / reconcile setup choices; **no runtime authorization**, no silent merge of PR #2/#5, no launch.
+
+
+## Последующее узкое поручение владельца — 2026-11-04
+
+После утверждения паспорта владелец отдельно разрешил **Моргане реализовать только M1 sampler** с проверками S01–S05 в собственной ветке/Draft PR. **Вергилий** — независимые математические fixtures до просмотра реализации, затем аудит кода и результатов. Это **не конкурс**, не разрешение M2/M3/M4, полного обучения или изменения контрактов. До фактического исполнения все проверки остаются NOT_RUN; при недоступном Mac/toolchain исполнитель обязан указать BLOCKED. См. [AGENTS](../AGENTS.md) и [распределение ролей](AGENT-WORK-ALLOCATION-v0.1.md).
