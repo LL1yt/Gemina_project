@@ -1,8 +1,8 @@
 # Gemina
 
-**Research / Architecture Draft · documentation only**
+**Research / Architecture Draft · M1 sampler under review**
 
-*Mobile Neural Agents in a Shared Trainable Weight Field.* Gemina investigates whether a compact recurrent agent and a stationary trainable field can jointly learn a useful predictor. This repository contains research documents and proposed experiments. No implementation, successful training or architectural novelty is established.
+*Mobile Neural Agents in a Shared Trainable Weight Field.* Gemina investigates whether a compact recurrent agent and a stationary trainable field can jointly learn a useful predictor. This branch adds only the M1 Swift/MLX periodic sampler, with S01–S05 passing locally on Metal. The full model, successful training and architectural novelty are not established. See the [validation report and reproduction command](docs/M1-VALIDATION.md); independent audit is pending.
 
 Gemina — самостоятельное открытое исследовательское направление. Цель — сделать гипотезы, источники и будущие результаты доступными для независимого изучения, воспроизведения и развития. Признание, коммерческий успех и участие сторонних разработчиков не являются условием работы.
 
@@ -18,7 +18,7 @@ Gemina — самостоятельное открытое исследоват�
 
 Есть миссия, исходный Architecture Draft v0.1, математическая спецификация, training design, обзор литературы, outline прототипа и открытые вопросы. Целевая среда будущей реализации — macOS, Swift и MLX. Под «исходным MVP» здесь понимается исследовательский замысел и план, а не работающая модель.
 
-**NOT_RUN:** реализация, сборка Swift/MLX, корпус и обучение, checkpoint, генерация, численные проверки реализации и CI. DOCX сообщает о малой NumPy-проверке sampler, но её скрипт и сырые результаты не приложены; здесь она не воспроизведена. Проверка сохранности документов не является тестом модели.
+**M1 RUN/PASS:** сборка Xcode/MLX, S01–S05 и проверки неверных входов: 6 тестов, 0 ошибок; [источники и ограничения](docs/M1-VALIDATION.md). **NOT_RUN:** M2/градиенты, полная модель, корпус и обучение, checkpoint, генерация и CI. DOCX сообщает о малой NumPy-проверке sampler, но её скрипт и сырые результаты не приложены; здесь она не воспроизведена. Проверка сохранности документов не является тестом модели.
 
 Польза W, навигации и различия темпов обучения не установлена. Нет подтверждённых заявлений о принципиальной новизне, сознании, автономности или преимуществе над GRU/Transformer. Архетипические названия — проектные аналогии.
 
@@ -44,7 +44,7 @@ Gemina — самостоятельное открытое исследоват�
 
 Независимые замечания и исследования можно предлагать через issue или отдельный PR по [CONTRIBUTING](CONTRIBUTING.md). Codex, Claude и другие агенты работают в своих ветках, сохраняют источники и различают экспертизу, реализацию и проверку. Владелец выбирает участников, рассматриваемые PR и принимаемые изменения. Публичное чтение и право самостоятельного развития по лицензии не дают права записи или слияния.
 
-Работающий экспериментальный пакет пока отсутствует. Будущие результаты должны включать точную ревизию, протокол, происхождение данных, splits, seeds, окружение, команды, бюджеты, сырые измерения и неудачные прогоны. Контрольные опыты должны отдельно проверять корректность, участие W, пользу его обучения и адресации. Текущая публикация не разрешает реализацию или запуск.
+Доступен только минимальный [M1 SwiftPM sampler](Package.swift), без полного экспериментального цикла. Его узкое разрешение не открывает M2 или обучение. Будущие результаты должны включать точную ревизию, протокол, происхождение данных, splits, seeds, окружение, команды, бюджеты, сырые измерения и неудачные прогоны. Контрольные опыты должны отдельно проверять корректность, участие W, пользу его обучения и адресации.
 
 Для цитирования используйте [CITATION.cff](CITATION.cff) с публичным идентификатором **LL1yt** и указывайте точный commit. Это развивающийся исследовательский репозиторий, не рецензированная публикация и не выпущенная модель.
 

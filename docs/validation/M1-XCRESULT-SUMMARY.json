@@ -1,0 +1,15 @@
+{
+  "title": "Test - GeminaSampler",
+  "result": "Passed",
+  "totalTestCount": 6,
+  "passedTests": 6,
+  "failedTests": 0,
+  "skippedTests": 0,
+  "expectedFailures": 0,
+  "startTime": 1793806352.426,
+  "finishTime": 1793806365.084,
+  "testFailures": [],
+  "runtimeWarnings": [],
+  "codeCommit": "7110c25ea05a8202fea96885c8f6693e72e41405",
+  "source": "xcresulttool get test-results summary; selected fields, device identifiers omitted"
+}
