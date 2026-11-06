@@ -31,6 +31,7 @@
 - [docs/WEB-AGENT.md](WEB-AGENT.md)
 - [docs/decisions/README.md](decisions/README.md)
 - [docs/proposals/README.md](proposals/README.md)
+- [docs/proposals/2026-11-03-MEMORY-ATTENTION-ASSISTANT.md](proposals/2026-11-03-MEMORY-ATTENTION-ASSISTANT.md) — **FUTURE EXPERIMENT / NOT_RUN**, помощник Архивариуса и credit AI
 - [sources/GEMINA-Research-Mission-v0.2.md](../sources/GEMINA-Research-Mission-v0.2.md)
 - [sources/Gemina_Architecture_Draft_v0_1.docx](../sources/Gemina_Architecture_Draft_v0_1.docx)
 

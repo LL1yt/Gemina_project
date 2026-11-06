@@ -9,6 +9,7 @@
 | LR 10⁻³/10⁻⁴ и равные LR как контроль, Adam, clipping, короткие синтетические последовательности | [Training design](../TRAINING-DESIGN.md) |
 | Будущие этапы sampler → цикл → обучение → inference/replay → контроли | [Outline](../MINIMAL-PROTOTYPE-OUTLINE.md) |
 | Несколько агентов, слоёв, режимы записи и согласования | [Research notes](../RESEARCH-NOTES.md) |
+| **Будущий помощник Архивариуса:** GRU + отбор записей внешней памяти + обучаемое attention (только гипотеза, после MVP) | [Memory Attention Assistant — 2026-11-03](2026-11-03-MEMORY-ATTENTION-ASSISTANT.md) |
 
 При принятии отдельного предложения зафиксировать основание и обновить [реестр решений](../decisions/README.md). При замене указать прежнее положение. [Открытые вопросы](../OPEN-QUESTIONS.md) сохраняются до решения.
 
